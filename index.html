@@ -7,6 +7,7 @@
   <title>La Pizza Popolare | The Best Pizza Restaurant Ever</title>
   <!-- CSS Link -->
   <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/responsive.css">
   <!-- Font Awesome Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -16,8 +17,54 @@
 
 <body>
 
-  
+  <!-- Main Start -->
+  <main class="main">
 
+
+    <!-- Navbar -->
+    <header class="main__header container">
+      <div class="nav__logo">
+        <span class="logo__text">LA PIZZA POPOLARE</span>
+      </div>
+
+      <div class="nav__links">
+        <ul class="nav__links-wrapper">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Who we are</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__btn">
+        <button class="btn">Book a Table</button>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Overlay Menu -->
+    <div class="overlay-menu">
+      <button class="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="overlay-menu__links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Who we are</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><button class="btn">Book a Table</button></li>
+      </ul>
+    </div>
+
+  </main>
+  <!-- Main End -->
+
+
+
+
+  <script type="module" src="src/js/main.js"></script>
 </body>
 
 </html>
