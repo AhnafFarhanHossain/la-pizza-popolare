@@ -24,7 +24,7 @@ html {
   --light-orange: rgba(226, 122, 63, 0.3);
   --hover-orange: rgba(192, 137, 73, 0.47);
   --light-brown: rgba(128, 114, 94, 1);
-  --accent-greend: #36392d;
+  --accent-green: #36392d;
   --white: #fff;
 }
 
@@ -42,6 +42,14 @@ html {
   src: url("fonts/ClashDisplay-Semibold.woff2") format("woff2"),
     url("fonts/ClashDisplay-Semibold.woff") format("woff");
   font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display Medium";
+  src: url("fonts/ClashDisplay-Medium.woff2") format("woff2"),
+    url("fonts/ClashDisplay-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -81,7 +89,7 @@ img {
 
 .btn {
   outline: none;
-  border: none;
+  border: 2px solid var(--accent);
   cursor: pointer;
   border-radius: 12px;
   color: var(--white);
@@ -89,6 +97,11 @@ img {
   background: var(--accent);
   font-weight: 600;
   font-size: 16px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: none;
+  color: var(--accent);
 }
 
 section,
@@ -109,6 +122,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.main .main__header .nav__logo {
+  user-select: none;
 }
 .main .main__header .nav__logo .logo__text {
   font-size: 18px;
@@ -190,4 +206,73 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+}
+
+/* Showreel Section Styles */
+.showreel {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.showreel .showreel__top {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.showreel .showreel__top .top__title h1 {
+  font-size: 64px;
+  color: var(--accent);
+}
+
+.showreel .showreel__top .showreel__btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 30px;
+  border: 1px solid var(--accent);
+  border-radius: 90px;
+  font-size: 46px;
+  font-family: "Clash Display Medium", sans-serif;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+  color: var(--accent);
+}
+
+.showreel .showreel__top .showreel__btn i {
+  transition: all 0.2s ease;
+}
+
+.showreel .showreel__top .showreel__btn:hover {
+  background: var(--accent);
+  color: var(--white);
+  gap: 20px;
+}
+.showreel .showreel__top .showreel__btn:hover i {
+  transform: rotate(45deg);
+  color: var(--white);
+}
+
+.showreel::after {
+  content: url(./images/blob.png);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.showreel__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 40px;
+}
+
+.showreel__wrapper img {
+  max-width: 100%;
 }
