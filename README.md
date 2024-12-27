@@ -82,6 +82,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+Ahnaf Farhan, Tawhid Islam
 
-Project Link: [https://github.com/yourusername/la-pizza-popolare](https://github.com/yourusername/la-pizza-popolare)
+Project Link: [https://github.com/AhnafFarhanHossain/la-pizza-popolare](https://github.com/AhnafFarhanHossain/la-pizza-popolare)

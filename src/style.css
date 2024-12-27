@@ -19,7 +19,6 @@ html {
 
 /* Root Variables */
 :root {
-  --bg: #d6dce2;
   --accent: #2d1312;
   --light-orange: rgba(226, 122, 63, 0.3);
   --hover-orange: rgba(192, 137, 73, 0.47);
@@ -57,7 +56,7 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  background: var(--bg);
+  background: var(--white);
   overflow-x: hidden;
 }
 
