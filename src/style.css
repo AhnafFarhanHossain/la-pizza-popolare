@@ -175,7 +175,7 @@ p {
   right: -100%;
   width: 60%;
   height: 100vh;
-  background: var(--bg);
+  background: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
