@@ -106,7 +106,11 @@ img {
 section,
 main {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 18px;
 }
 
 /* Main Section Styles */
@@ -274,4 +278,59 @@ main {
 
 .showreel__wrapper img {
   max-width: 100%;
+}
+
+/* Team Section Styles */
+.team {
+  background: var(--light-orange);
+  margin-top: 150px;
+}
+
+.team .team__top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.team .team__top h1 {
+  font-size: 64px;
+  color: var(--accent);
+}
+
+.team .team__top p {
+  max-width: 570px;
+  color: var(--accent);
+}
+
+.team .team__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.team .team__wrapper .team__member {
+  text-align: center;
+}
+
+.team .team__wrapper .team__member img {
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+.team .team__wrapper .team__member h3 {
+  font-size: 20px;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.team .team__wrapper .team__member p {
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.team .team__wrapper .team__member span {
+  color: var(--accent);
+  font-size: 18px;
+  line-height: 1.4;
 }
