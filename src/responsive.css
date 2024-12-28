@@ -100,4 +100,7 @@
 
 /* Mobile devices (up to 320px) */
 @media only screen and (max-width: 320px) {
+  .showreel .showreel__top .top__title h1 {
+    font-size: 26px;
+  }
 }
