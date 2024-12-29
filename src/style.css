@@ -61,6 +61,10 @@ body {
 }
 
 /* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+}
+
 h1,
 h2 {
   font-family: "Clash Display Semibold", sans-serif;

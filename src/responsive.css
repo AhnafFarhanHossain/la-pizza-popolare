@@ -93,6 +93,10 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
   }
+
+  .showreel .showreel__top .top__title h1 {
+    font-size: 2.2rem;
+  }
 }
 
 /* Mobile devices (up to 320px) */
