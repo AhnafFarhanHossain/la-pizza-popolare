@@ -1,6 +1,6 @@
 .menu-sec {
   height: min-content;
-  padding: 3rem 3rem;
+  position: relative;
 }
 
 .menu-sec__menu-and-context {
@@ -51,9 +51,8 @@
 
 .menu-sec__item-container {
   width: 100%;
-  gap: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
 }
 
 .food-item {
@@ -64,7 +63,7 @@
   line-height: 1.8rem;
 
   img {
-    width: 90%;
+    width: 100%;
     aspect-ratio: 1/1;
   }
 
@@ -83,16 +82,38 @@
   }
 }
 
-@media (max-width: 715px) {
-  .menu-sec {
-    padding: 3rem 1rem;
-  }
-
+@media (max-width: 1240px) {
   .menu-sec__item-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-sec__item-container {
+    display: flex;
+    overflow-x: scroll;
+    cursor: grab;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   .food-item {
-    aspect-ratio: 2/2.6;
+    min-width: 350px;
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 510px){
+  .food-item {
+    min-width: 280px;
+}
+
+@media (max-width: 380px) {
+  .food-item {
+    min-width: 230px;
   }
 }
