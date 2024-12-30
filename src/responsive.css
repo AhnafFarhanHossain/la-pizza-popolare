@@ -104,3 +104,40 @@
     font-size: 26px;
   }
 }
+
+@media (max-width: 1240px) {
+  .menu-sec__item-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-sec__item-container {
+    display: flex;
+    overflow-x: scroll;
+    cursor: grab;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .food-item {
+    min-width: 350px;
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 510px) {
+  .food-item {
+    min-width: 280px;
+  }
+
+  @media (max-width: 380px) {
+    .food-item {
+      min-width: 230px;
+    }
+  }
+}
