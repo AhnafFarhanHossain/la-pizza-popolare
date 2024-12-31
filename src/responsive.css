@@ -85,6 +85,9 @@
     font-size: 48px;
     margin-bottom: 10px;
   }
+  .main .hero h1 {
+    font-size: 48px;
+  }
 }
 
 /* Extra small devices (phones, up to 480px) */
