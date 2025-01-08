@@ -266,7 +266,7 @@ p {
 }
 
 .menu-sec__btns__btn {
-  background-color: #fff;
+  background-color: transparent;
   font-size: 1rem;
   color: var(--accent);
   border: 1px solid var(--accent);
@@ -599,7 +599,6 @@ p {
 /* Footer Styles */
 
 .footer_wrapper {
-  height: 20rem;
   display: flex;
   flex-direction: column;
   background-color: var(--light-orange);
@@ -681,7 +680,38 @@ p {
 }
 
 .footer-box2 {
-  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+
+  a {
+    height: 2.5rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a svg {
+    height: 2.5rem;
+    fill: var(--accent);
+  }
+
+  a:nth-child(2) svg {
+    height: 2.7rem;
+  }
+
+  a:nth-child(3) svg {
+    height: 2.6rem;
+    padding-top: 3px;
+  }
+}
+
+.copy-right {
+  width: 100%;
+  text-align: center;
+  color: var(--accent);
 }
 
 @media (max-width: 930px) {
@@ -691,6 +721,10 @@ p {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+  }
+
+  .footer-box2 {
+    flex-direction: row;
   }
 
   .footer_item__container2 {
