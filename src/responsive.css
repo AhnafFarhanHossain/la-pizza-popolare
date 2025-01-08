@@ -144,3 +144,9 @@
     }
   }
 }
+@media (max-width: 590px) {
+  .event_items {
+    height: 200vh;
+    grid-template-columns: repeat(1, minmax(280px, 1fr));
+  }
+}

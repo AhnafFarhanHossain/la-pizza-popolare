@@ -438,3 +438,159 @@ p {
   font-size: 18px;
   line-height: 1.4;
 }
+
+/* Event Section */
+.event_wrapper {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.event_title {
+  h1 {
+    font-size: 64px;
+    color: var(--accent);
+    line-height: 5rem 0 3rem 0;
+    margin-bottom: 40px;
+  }
+}
+
+.event_items {
+  height: 130vh;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.event_items__item {
+  background-size: cover;
+  background-position: center;
+}
+
+.event-image1 {
+  background-image: url(images/events-1.png);
+  position: relative;
+  overflow: hidden;
+  transition: all .3s ease;
+
+  &::after {
+    content: "Corporate Events";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: "Clash Display Semibold", sans-serif;
+    background-color: var(--light-orange);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+    display: flex;
+  }
+}
+.event-image2 {
+  background-image: url(images/events-1.png);
+  position: relative;
+  overflow: hidden;
+  transition: all .3s ease;
+
+  &::after {
+    content: "Grand Opening Ceremony";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: "Clash Display Semibold", sans-serif;
+    background-color: var(--light-orange);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+    display: flex;
+  }
+}
+.event-image3 {
+  background-image: url(images/events-1.png);
+  position: relative;
+  overflow: hidden;
+  transition: all .3s ease;
+
+  &::after {
+    content: "Christmas Event";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: "Clash Display Semibold", sans-serif;
+    background-color: var(--light-orange);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+    display: flex;
+  }
+}
+.event-image4 {
+  background-image: url(images/events-1.png);
+  position: relative;
+  overflow: hidden;
+  transition: all .3s ease;
+
+  &::after {
+    content: "New Year's Eve Ceremony";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: "Clash Display Semibold", sans-serif;
+    background-color: var(--light-orange);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+    display: flex;
+  }
+}
+
+.event-image2 {
+  background-image: url(images/events-2.png);
+}
+
+.event-image3 {
+  background-image: url(images/events-3.png);
+}
+
+.event-image4 {
+  background-image: url(images/events-4.png);
+}
