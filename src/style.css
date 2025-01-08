@@ -439,7 +439,8 @@ p {
   line-height: 1.4;
 }
 
-/* Event Section */
+/* -----Event Section----- */
+
 .event_wrapper {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -470,7 +471,7 @@ p {
   background-image: url(images/events-1.png);
   position: relative;
   overflow: hidden;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &::after {
     content: "Corporate Events";
@@ -488,7 +489,7 @@ p {
     color: #fff;
     text-align: center;
     opacity: 0;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
   &:hover::after {
     opacity: 1;
@@ -499,7 +500,7 @@ p {
   background-image: url(images/events-1.png);
   position: relative;
   overflow: hidden;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &::after {
     content: "Grand Opening Ceremony";
@@ -517,7 +518,7 @@ p {
     color: #fff;
     text-align: center;
     opacity: 0;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
   &:hover::after {
     opacity: 1;
@@ -528,7 +529,7 @@ p {
   background-image: url(images/events-1.png);
   position: relative;
   overflow: hidden;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &::after {
     content: "Christmas Event";
@@ -546,7 +547,7 @@ p {
     color: #fff;
     text-align: center;
     opacity: 0;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
   &:hover::after {
     opacity: 1;
@@ -557,7 +558,7 @@ p {
   background-image: url(images/events-1.png);
   position: relative;
   overflow: hidden;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &::after {
     content: "New Year's Eve Ceremony";
@@ -575,7 +576,7 @@ p {
     color: #fff;
     text-align: center;
     opacity: 0;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
   &:hover::after {
     opacity: 1;
@@ -593,4 +594,114 @@ p {
 
 .event-image4 {
   background-image: url(images/events-4.png);
+}
+
+/* Footer Styles */
+
+.footer_wrapper {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-orange);
+}
+
+.footer_item {
+  flex: 1;
+}
+
+.footer-box1 {
+  display: flex;
+  justify-content: space-between;
+  color: var(--accent);
+
+  .footer_item__container1 {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer_item__container2 {
+    a {
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: "Clash Display Bold";
+    }
+  }
+
+  .footer_item__container3 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  span {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  #newsletter-email {
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border-bottom: 2px solid var(--accent);
+    caret-color: var(--accent);
+    color: var(--accent);
+
+    &::placeholder {
+      color: var(--accent);
+      opacity: 0.5;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    background: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 140px;
+    height: 2.5rem;
+    align-self: flex-end;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: var(--accent);
+      color: #fff;
+    }
+  }
+}
+
+.footer-box2 {
+  /* background-color: blue; */
+}
+
+@media (max-width: 930px) {
+  .footer_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer_item__container2 {
+    order: -2;
+  }
+
+  .footer_item__container3 {
+    order: -1;
+  }
+
+  .footer_item__container1 {
+    margin-top: 1rem;
+  }
 }
