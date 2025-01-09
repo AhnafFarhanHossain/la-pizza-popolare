@@ -58,6 +58,7 @@ body {
   height: 100vh;
   background: var(--white);
   overflow-x: hidden;
+  cursor: url(images/cursor-arrow.png), auto;
 }
 
 /* Heading Styles */
@@ -77,6 +78,11 @@ h3 {
 a {
   text-decoration: none;
   color: var(--accent);
+  cursor: url(images/cursor-pointer.png), pointer;
+}
+
+button {
+  cursor: url(images/cursor-pointer.png), pointer;
 }
 li {
   list-style: none;
@@ -93,7 +99,7 @@ img {
 .btn {
   outline: none;
   border: 2px solid var(--accent);
-  cursor: pointer;
+
   border-radius: 12px;
   color: var(--white);
   padding: 12px 30px;
@@ -180,7 +186,6 @@ p {
 /* Hamburger Menu */
 .hamburger {
   display: none;
-  cursor: pointer;
 }
 .hamburger i {
   font-size: 24px;
@@ -213,7 +218,6 @@ p {
   right: 20px;
   background: none;
   border: none;
-  cursor: pointer;
   font-size: 24px;
   color: var(--accent);
   padding: 10px;
@@ -273,7 +277,6 @@ p {
   padding: 0.7rem 2rem;
   border-radius: 10px;
   margin: 5px;
-  cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -305,7 +308,6 @@ p {
     padding: 0.5rem 1rem;
     border: 1px solid var(--accent);
     border-radius: 10px;
-    cursor: pointer;
     transition: 0.3s ease-in-out;
 
     &:hover {
@@ -344,7 +346,6 @@ p {
   font-size: 46px;
   font-family: "Clash Display Medium", sans-serif;
   background: none;
-  cursor: pointer;
   position: relative;
   z-index: 1;
   transition: all 0.3s ease;
@@ -665,7 +666,6 @@ p {
     border: 2px solid var(--accent);
     padding: 0.5rem 1rem;
     border-radius: 8px;
-    cursor: pointer;
     width: 140px;
     height: 2.5rem;
     align-self: flex-end;
