@@ -317,6 +317,30 @@ p {
   }
 }
 
+.menu-scroll-context {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+  color: var(--accent);
+  font-size: 1.3rem;
+  font-family: "Clash Display Semibold", sans-serif;
+  display: none;
+
+  img {
+    height: 4rem;
+  }
+
+  img:first-child {
+    transform: rotate(270deg);
+  }
+
+  img:last-child {
+    transform: rotate(90deg);
+  }
+}
+
 /* Showreel Section Styles */
 .showreel {
   position: relative;
@@ -375,14 +399,14 @@ p {
 }
 
 .showreel__wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center;
-  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .showreel__wrapper img {
-  max-width: 100%;
+  aspect-ratio: 9 / 16;
+  width: 23%;
 }
 
 /* Team Section Styles */

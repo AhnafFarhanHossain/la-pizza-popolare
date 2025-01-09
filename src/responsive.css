@@ -28,11 +28,10 @@
     gap: 25px;
   }
   .showreel__wrapper {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    flex-wrap: wrap;
   }
   .showreel__wrapper img {
-    max-width: 100%;
+    width: 30%;
   }
   .team .team__top {
     flex-direction: column;
@@ -66,10 +65,8 @@
     width: 60%;
     right: -100%;
   }
-  .showreel__wrapper {
-    padding: 0;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 40px;
+  .showreel__wrapper img {
+    width: 47%;
   }
   .showreel .showreel__top .top__title h1 {
     font-size: 48px;
@@ -114,7 +111,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 617px) {
   .menu-sec__item-container {
     display: flex;
     overflow-x: scroll;
@@ -130,6 +127,10 @@
   .food-item {
     min-width: 350px;
     scroll-snap-align: start;
+  }
+
+  .menu-scroll-context {
+    display: flex;
   }
 }
 
@@ -148,5 +149,9 @@
   .event_items {
     height: 200vh;
     grid-template-columns: repeat(1, minmax(280px, 1fr));
+  }
+
+  .showreel__wrapper img {
+    width: 100%;
   }
 }
